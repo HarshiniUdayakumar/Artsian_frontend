@@ -36,6 +36,7 @@ const CategoryPreviewSection = () => {
         py: { xs: 6, md: 10 },
         px: { xs: 2, sm: 4, md: 6 },
         backgroundColor: "#fafafa",
+        top:0
       }}
     >
       <Box
@@ -56,6 +57,8 @@ const CategoryPreviewSection = () => {
             display: "flex",
             flexDirection: "column",
             gap: 3,
+            top: 0,
+            mb: 2,
           }}
         >
           <Typography

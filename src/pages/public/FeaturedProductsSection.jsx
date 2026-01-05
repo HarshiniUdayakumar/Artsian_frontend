@@ -83,14 +83,14 @@ const FeaturedProductsSection = () => {
   ];
 
   return (
-    <Box sx={{ py: 10, backgroundColor: "#fff" }}>
-      <Box sx={{ maxWidth: 1200, mx: "auto", px: 3 }}>
+    <Box sx={{ py: 10, backgroundColor: "#fff" ,fontFamily:'Playfair Display, serif'}}>
+      <Box sx={{ maxWidth: 1200, mx: "auto", px: 3 ,fontFamily:'Playfair Display, serif'}}>
         {/* Heading */}
         <Box textAlign="center" mb={6}>
-          <Typography variant="h3" fontWeight="bold">
+          <Typography variant="h3" fontWeight="bold" fontFamily="Playfair Display, serif">
             Loved by Our Community
           </Typography>
-          <Typography color="text.secondary">
+          <Typography color="text.secondary" fontFamily="Playfair Display, serif">
             Handpicked favorites crafted and loved by many
           </Typography>
         </Box>
@@ -118,7 +118,9 @@ const FeaturedProductsSection = () => {
                 position: "relative",
                 borderRadius: 3,
                 overflow: "hidden",
+                fontFamily:'Playfair Display, serif',
                 transition: "0.3s",
+
                 "&:hover": {
                   transform: "translateY(-6px)",
                   boxShadow: 6,
@@ -131,6 +133,7 @@ const FeaturedProductsSection = () => {
                   label={product.badge}
                   size="small"
                   sx={{
+                    fontFamily:'Playfair Display, serif',
                     position: "absolute",
                     top: 12,
                     right: 12,
@@ -143,7 +146,7 @@ const FeaturedProductsSection = () => {
               )}
 
               {/* IMAGE – FIXED SIZE */}
-              <Box sx={{ height: 240, width: "100%", overflow: "hidden" }}>
+              <Box sx={{ height: 240, width: "100%", overflow: "hidden",fontFamily:'Playfair Display, serif' }}>
                 <CardMedia
                   component="img"
                   image={product.image}
@@ -152,7 +155,8 @@ const FeaturedProductsSection = () => {
                     width: "100%",
                     height: "100%",
                     objectFit: "cover",
-                  }}
+                    fontFamily:'Playfair Display, serif'     
+                    }}
                 />
               </Box>
 
@@ -163,6 +167,7 @@ const FeaturedProductsSection = () => {
                   display: "flex",
                   flexDirection: "column",
                   overflow: "hidden",
+                  fontFamily:'Playfair Display, serif'
                 }}
               >
                 {/* Name */}
@@ -176,6 +181,7 @@ const FeaturedProductsSection = () => {
                     display: "-webkit-box",
                     WebkitLineClamp: 2,
                     WebkitBoxOrient: "vertical",
+                    fontFamily:'Playfair Display, serif'
                   }}
                 >
                   {product.name}
@@ -190,6 +196,7 @@ const FeaturedProductsSection = () => {
                     whiteSpace: "nowrap",
                     overflow: "hidden",
                     textOverflow: "ellipsis",
+                    fontFamily:'Playfair Display, serif'
                   }}
                 >
                   by {product.artisan}
@@ -199,7 +206,7 @@ const FeaturedProductsSection = () => {
                 <Typography
                   variant="h6"
                   fontWeight={700}
-                  sx={{ mt: "auto", color: "#8b6f47" }}
+                  sx={{ mt: "auto", color: "#8b6f47",fontFamily:'Playfair Display, serif' }}
                 >
                   ₹{product.price.toLocaleString("en-IN")}
                 </Typography>
@@ -210,7 +217,11 @@ const FeaturedProductsSection = () => {
 
         {/* CTA */}
         <Box textAlign="center" mt={6}>
-          <Button variant="outlined">View All Products →</Button>
+          <Button variant="outlined" fontFamily="Playfair Display, serif" sx={{borderBlockColor: "#8b6f47",
+            borderRadius: 2,boxSizing: 'border-box',px:4,py:1,'&:hover': {borderBlockColor: "#8b6f47",backgroundColor:'#e6dcceff'},fontFamily:'Playfair Display, serif',
+            padding:'10px 20px',fontSize:'16px',fontWeight:'bold'
+          }}>
+            View All Products →</Button>
         </Box>
       </Box>
     </Box>
