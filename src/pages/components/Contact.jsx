@@ -109,9 +109,9 @@ const Contact = () => {
                   boxShadow: "0 10px 25px rgba(156,122,76,0.35)",
                   "&:hover": {
                     background: "linear-gradient(135deg, #8a6a3f, #9c7a4c)",
-                  },
+                  }
                 }}
-              >
+              > 
                 Send Message
               </Button>
             </Stack>

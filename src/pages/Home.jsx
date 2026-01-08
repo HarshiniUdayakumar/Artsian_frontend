@@ -1,8 +1,8 @@
-import Navbar from "./public/Navbar";
-import HeroSection from "./public/HeroSection";
-import CategoryPreviewSection from "./public/CategoryPreviewSection";
-import FeaturedProductsSection from "./public/FeaturedProductsSection";
-import Contact from "./public/Contact";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import CategoryPreviewSection from "./components/CategoryPreviewSection";
+import FeaturedProductsSection from "./components/FeaturedProductsSection";
+import Contact from "./components/Contact";
 
 const Home = () => {
     return (

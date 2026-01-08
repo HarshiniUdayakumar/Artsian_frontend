@@ -1,5 +1,6 @@
 import { Box, Typography, Container } from "@mui/material";
-import Navbar from "../public/Navbar";
+import Navbar from "../components/Navbar";
+
 
 const Ceramics = () => {
   return (

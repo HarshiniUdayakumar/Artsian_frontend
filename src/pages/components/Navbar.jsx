@@ -1,6 +1,7 @@
 import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
-
+import { useNavigate } from "react-router-dom";
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <AppBar
       position="static"
@@ -30,6 +31,7 @@ const Navbar = () => {
           </Box>
           <Button 
             variant="outlined" 
+            onClick={()=>navigate("/login")}
             sx={{ 
               borderRadius: 3,
               fontWeight: 'bold',

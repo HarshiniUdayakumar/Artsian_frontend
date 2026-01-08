@@ -6,7 +6,8 @@ import {
   Card,
   CardMedia,
 } from "@mui/material";
-import Navbar from "../public/Navbar";
+import Navbar from "../components/Navbar";
+
 
 const jewelryImages = [
   "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&h=600&fit=crop",
