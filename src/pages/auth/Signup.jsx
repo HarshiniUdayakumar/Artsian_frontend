@@ -98,9 +98,17 @@ const Register = () => {
         </Typography>
       </Paper>
 
-      <Box className="basket-container">
-              <img src={basketImg} alt="Basket" />
-            </Box>
+      
+     
+
+        <Box className="basket-container">
+          <img
+            src={basketImg}
+            alt="Basket"
+          />
+        
+      </Box>
+    
             
     </Box>
   );

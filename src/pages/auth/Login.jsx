@@ -6,6 +6,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 
+
+
 const Login = () => {
   const navigate = useNavigate();
   const [role, setRole] = useState("");
@@ -60,6 +62,7 @@ const Login = () => {
         <Button
           fullWidth
           className="login-btn"
+          onClick={()=>navigate("/buyerdashboard")}
         >
           Login
         </Button>
